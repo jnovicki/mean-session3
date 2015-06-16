@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font: 100%/1.6 Verdana, sans-serif; }
+
+.drawers {
+  list-style: none;
+  /*float:left;*/
+  width: 50%; }
+
+@media screen and (min-width: 768px) {
+  width: 50%;
+  float: left; }
+.drawer-handle {
+  cursor: pointer;
+  color: #fff;
+  background: #aad06b url(images/accordion_toggle.jpg) right no-repeat;
+  border-top: 3px solid #fff; }
+
+.drawer-handle + ul {
+  display: none; }
+
+.selected {
+  background-image: url(images/accordion_toggle_active.jpg);
+  background-color: #e05530; }
+
+.boxee {
+  border: 2px solid #fff;
+  width: 100%;
+  min-height: 10em;
+  /*float:right;*/
+  background-color: #e05530; }
+
+@media screen and (min-width: 768px) {
+  .boxee {
+    width: 50%;
+    float: left; }
+
+  .drawers {
+    width: 50%;
+    float: left; } }
+
+/*# sourceMappingURL=styles.css.map */
